@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90AAC17519721418000868FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAC17419721418000868FE /* Foundation.framework */; };
+		90AAC17719721418000868FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAC17619721418000868FE /* CoreGraphics.framework */; };
+		90AAC17919721418000868FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AAC17819721418000868FE /* UIKit.framework */; };
+		90AAC17F19721418000868FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90AAC17D19721418000868FE /* InfoPlist.strings */; };
+		90AAC18119721418000868FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAC18019721418000868FE /* main.m */; };
+		90AAC18519721418000868FE /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AAC18419721418000868FE /* RMAppDelegate.m */; };
+		90AAC18719721418000868FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AAC18619721418000868FE /* Images.xcassets */; };
+		90BC33C7197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC33C6197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.m */; };
+		90BC33CA19721B1F00B0F12F /* RMMapHeaderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BC33C919721B1F00B0F12F /* RMMapHeaderTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90AAC17119721418000868FE /* RMMapTableHeaderViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMMapTableHeaderViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90AAC17419721418000868FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90AAC17619721418000868FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90AAC17819721418000868FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90AAC17C19721418000868FE /* RMMapTableHeaderViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RMMapTableHeaderViewDemo-Info.plist"; sourceTree = "<group>"; };
+		90AAC17E19721418000868FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90AAC18019721418000868FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90AAC18219721418000868FE /* RMMapTableHeaderViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMMapTableHeaderViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		90AAC18319721418000868FE /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
+		90AAC18419721418000868FE /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
+		90AAC18619721418000868FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		90AAC18D19721418000868FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		90BC33C5197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapTableHeaderViewDemoTableViewController.h; sourceTree = "<group>"; };
+		90BC33C6197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapTableHeaderViewDemoTableViewController.m; sourceTree = "<group>"; };
+		90BC33C819721B1F00B0F12F /* RMMapHeaderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMapHeaderTableViewController.h; path = ../RMMapHeaderTableViewController.h; sourceTree = "<group>"; };
+		90BC33C919721B1F00B0F12F /* RMMapHeaderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMapHeaderTableViewController.m; path = ../RMMapHeaderTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90AAC16E19721418000868FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90AAC17719721418000868FE /* CoreGraphics.framework in Frameworks */,
+				90AAC17919721418000868FE /* UIKit.framework in Frameworks */,
+				90AAC17519721418000868FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90AAC16819721418000868FE = {
+			isa = PBXGroup;
+			children = (
+				90AAC17319721418000868FE /* Frameworks */,
+				90AAC17219721418000868FE /* Products */,
+				90AAC17A19721418000868FE /* RMMapTableHeaderViewDemo */,
+			);
+			sourceTree = "<group>";
+		};
+		90AAC17219721418000868FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90AAC17119721418000868FE /* RMMapTableHeaderViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90AAC17319721418000868FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90AAC17419721418000868FE /* Foundation.framework */,
+				90AAC17619721418000868FE /* CoreGraphics.framework */,
+				90AAC17819721418000868FE /* UIKit.framework */,
+				90AAC18D19721418000868FE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90AAC17A19721418000868FE /* RMMapTableHeaderViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				90BC33C41972156700B0F12F /* RMMapTableHeaderView */,
+				90AAC18319721418000868FE /* RMAppDelegate.h */,
+				90AAC18419721418000868FE /* RMAppDelegate.m */,
+				90BC33C5197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.h */,
+				90BC33C6197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.m */,
+				90AAC18619721418000868FE /* Images.xcassets */,
+				90AAC17B19721418000868FE /* Supporting Files */,
+			);
+			path = RMMapTableHeaderViewDemo;
+			sourceTree = "<group>";
+		};
+		90AAC17B19721418000868FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90AAC17C19721418000868FE /* RMMapTableHeaderViewDemo-Info.plist */,
+				90AAC17D19721418000868FE /* InfoPlist.strings */,
+				90AAC18019721418000868FE /* main.m */,
+				90AAC18219721418000868FE /* RMMapTableHeaderViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90BC33C41972156700B0F12F /* RMMapTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				90BC33C819721B1F00B0F12F /* RMMapHeaderTableViewController.h */,
+				90BC33C919721B1F00B0F12F /* RMMapHeaderTableViewController.m */,
+			);
+			name = RMMapTableHeaderView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90AAC17019721418000868FE /* RMMapTableHeaderViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90AAC19D19721418000868FE /* Build configuration list for PBXNativeTarget "RMMapTableHeaderViewDemo" */;
+			buildPhases = (
+				90AAC16D19721418000868FE /* Sources */,
+				90AAC16E19721418000868FE /* Frameworks */,
+				90AAC16F19721418000868FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMMapTableHeaderViewDemo;
+			productName = RMMapTableHeaderViewDemo;
+			productReference = 90AAC17119721418000868FE /* RMMapTableHeaderViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90AAC16919721418000868FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rune Madsen";
+				TargetAttributes = {
+					90AAC17019721418000868FE = {
+						DevelopmentTeam = G6643GXHSA;
+					};
+				};
+			};
+			buildConfigurationList = 90AAC16C19721418000868FE /* Build configuration list for PBXProject "RMMapTableHeaderViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90AAC16819721418000868FE;
+			productRefGroup = 90AAC17219721418000868FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90AAC17019721418000868FE /* RMMapTableHeaderViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90AAC16F19721418000868FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90AAC17F19721418000868FE /* InfoPlist.strings in Resources */,
+				90AAC18719721418000868FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90AAC16D19721418000868FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90BC33C7197215A100B0F12F /* RMMapTableHeaderViewDemoTableViewController.m in Sources */,
+				90BC33CA19721B1F00B0F12F /* RMMapHeaderTableViewController.m in Sources */,
+				90AAC18119721418000868FE /* main.m in Sources */,
+				90AAC18519721418000868FE /* RMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90AAC17D19721418000868FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90AAC17E19721418000868FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90AAC19B19721418000868FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90AAC19C19721418000868FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90AAC19E19721418000868FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMMapTableHeaderViewDemo/RMMapTableHeaderViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "RMMapTableHeaderViewDemo/RMMapTableHeaderViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90AAC19F19721418000868FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RMMapTableHeaderViewDemo/RMMapTableHeaderViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "RMMapTableHeaderViewDemo/RMMapTableHeaderViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90AAC16C19721418000868FE /* Build configuration list for PBXProject "RMMapTableHeaderViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90AAC19B19721418000868FE /* Debug */,
+				90AAC19C19721418000868FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90AAC19D19721418000868FE /* Build configuration list for PBXNativeTarget "RMMapTableHeaderViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90AAC19E19721418000868FE /* Debug */,
+				90AAC19F19721418000868FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90AAC16919721418000868FE /* Project object */;
+}
