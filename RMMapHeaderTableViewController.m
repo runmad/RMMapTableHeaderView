@@ -39,22 +39,12 @@
     [tableHeaderView setBackgroundColor:[UIColor blueColor]];
     tableHeaderView.clipsToBounds = NO;
     
-    NSLog(@"%@", NSStringFromCGRect(self.containerView.frame));
-    NSLog(@"%@", NSStringFromCGRect(tableHeaderView.frame));
-    
     [self.tableView setTableHeaderView:tableHeaderView];
-    
-    NSLog(@"%f", self.tableView.contentOffset.y);
-    NSLog(@"%f", self.tableView.contentInset.top);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    NSLog(@"%f", scrollView.contentOffset.y);
-    NSLog(@"%f", self.tableView.contentInset.top);
-    NSLog(@"%f", scrollView.contentOffset.y + self.tableView.contentInset.top);
-    
     [self.containerView setFrame:CGRectMake(0, scrollView.contentOffset.y, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(self.tableView.tableHeaderView.frame) + -((scrollView.contentOffset.y + self.tableView.contentInset.top) - self.tableView.contentInset.top))];
-    [self.mapView setFrame:CGRectMake(0, (CGRectGetHeight(self.containerView.frame) / 2) - (CGRectGetHeight(self.tableView.frame) / 2) + self.tableView.contentInset.top, CGRectGetWidth(self.mapView.frame), CGRectGetHeight(self.tableView.frame))];
+    [self.mapView setFrame:CGRectMake(0, (CGRectGetHeight(self.containerView.frame) / 2) - (CGRectGetHeight(self.tableView.frame) / 2) + (self.tableView.contentInset.top / 2), CGRectGetWidth(self.mapView.frame), CGRectGetHeight(self.tableView.frame))];
 }
 
 @end
