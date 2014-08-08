@@ -29,13 +29,9 @@
     self.containerView.clipsToBounds = YES;
     
     self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.containerView.frame), CGRectGetHeight(self.tableView.frame) + self.tableView.contentInset.top + self.tableView.contentInset.bottom)];
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);
-    CLLocationCoordinate2D centerCoordinate = CLLocationCoordinate2DMake(43.6687942, -79.393005);
-    MKCoordinateRegion region = MKCoordinateRegionMake(centerCoordinate, span);
     self.mapView.delegate = self;
-    [self.mapView setRegion:region];
-    //        CGFloat offsetY = (CGRectGetHeight(self.containerView.frame) / 2) - (CGRectGetHeight(self.containerView.frame) / 2) + self.tableView.contentInset.top;// -(mapHeight / 2) + -(offset.y / 2);
-    //        [self.mapView setFrame:CGRectMake(0, offsetY, CGRectGetWidth(self.mapView.frame), CGRectGetHeight(self.containerView.frame) + self.tableView.contentInset.top)];
+    self.mapView.userTrackingMode = MKUserTrackingModeFollow;
+    self.mapView.showsUserLocation = YES;
     [self.containerView addSubview:self.mapView];
     
     UIView *tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(self.containerView.frame) - self.tableView.contentInset.top)];
@@ -58,7 +54,6 @@
     NSLog(@"%f", scrollView.contentOffset.y + self.tableView.contentInset.top);
     
     [self.containerView setFrame:CGRectMake(0, scrollView.contentOffset.y, CGRectGetWidth(self.tableView.frame), CGRectGetHeight(self.tableView.tableHeaderView.frame) + -((scrollView.contentOffset.y + self.tableView.contentInset.top) - self.tableView.contentInset.top))];
-//    [self.mapView setCenter:CGPointMake(CGRectGetMidX(self.containerView.frame), CGRectGetMidX(self.containerView.frame))];
     [self.mapView setFrame:CGRectMake(0, (CGRectGetHeight(self.containerView.frame) / 2) - (CGRectGetHeight(self.tableView.frame) / 2) + self.tableView.contentInset.top, CGRectGetWidth(self.mapView.frame), CGRectGetHeight(self.tableView.frame))];
 }
 

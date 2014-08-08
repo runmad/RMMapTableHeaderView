@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Rune Madsen. All rights reserved.
 //
 
-#import <MapKit/MapKit.h>
+@import MapKit;
 
 @interface RMMapHeaderTableViewController : UITableViewController <MKMapViewDelegate>
 
