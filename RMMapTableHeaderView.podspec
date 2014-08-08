@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "RMMapTableHeaderView provides easy integration of MapKit into a UITableView"
   s.description  = "RMMapTableHeaderView provides easy integration of MapKit into a UITableView. Subclass RMMapHeaderTableViewController and instantly have a MKMapView in your UITableView’s tableHeaderView"
   s.homepage     = "https://github.com/runmad/RMMapTableHeaderView.git"
-  s.license      = { :type => "MIT", :file => “LICENSE” }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Rune Madsen" => "runemadsen@mac.com" }
   # Or just: s.author    = "Rune Madsen"
   # s.authors            = { "Rune Madsen" => "runemadsen@mac.com" }
